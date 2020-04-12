@@ -1,0 +1,16 @@
+<pre>
+Project Name    : kotlin-selenium-gauge-demo
+Developer       : Osanda Deshan
+Version         : 1.0.0
+Date            : 4/12/2020
+Time            : 5:28 PM
+Description     : This is a concept file
+</pre>
+
+
+
+# Login with email <email> and password <password>
+
+* On home page
+* Click on Sign In button
+* Login to the application using email <email> and password <password>
