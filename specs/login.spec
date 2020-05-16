@@ -11,11 +11,13 @@ Description     : This is an executable specification file for login scenarios
 
 
 
-## Valid user login to the application
+## Existing user login to the application
 * Login with email "osanda@mailinator.com" and password "1qaz2wsx@"
-* Page title is "My account - My Store"
+* Logout
 
 
 ## Invalid user login to the application
-* Login with email "gemunu@mailinator.com" and password "1qaz2wsx@"
+* On landing page
+* Click on Sign In button
+* Login to the application using email "gemunu@mailinator.com" and password "1qaz2wsx@"
 * Page title is "Login - My Store"

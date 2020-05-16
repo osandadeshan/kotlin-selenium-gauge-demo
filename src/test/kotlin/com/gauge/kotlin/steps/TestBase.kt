@@ -1,11 +1,10 @@
-package com.gauge.kotlin.test
+package com.gauge.kotlin.steps
 
-import com.gauge.kotlin.util.Driver
+import com.gauge.kotlin.util.driver.Driver.Companion.webDriver
 import org.openqa.selenium.JavascriptExecutor
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.support.ui.ExpectedCondition
 import org.openqa.selenium.support.ui.WebDriverWait
-
 
 /**
  * Project Name    : kotlin-selenium-gauge-demo
@@ -18,8 +17,8 @@ import org.openqa.selenium.support.ui.WebDriverWait
 
 open class TestBase {
 
-    val driver: WebDriver? = Driver.webDriver
-    var APP_URL = System.getenv("application_endpoint")
+    val driver: WebDriver? = webDriver
+    var appUrl = System.getenv("application_endpoint")!!
 
     open fun waitForPageLoad(driver: WebDriver?) {
         val pageLoadCondition: ExpectedCondition<Boolean> =

@@ -9,15 +9,18 @@ import org.openqa.selenium.support.PageFactory
  * Project Name    : kotlin-selenium-gauge-demo
  * Developer       : Osanda Deshan
  * Version         : 1.0.0
- * Date            : 4/12/2020
- * Time            : 4:55 PM
- * Description     : This is homepage page object class
+ * Date            : 5/16/2020
+ * Time            : 5:01 PM
+ * Description     : This is menu bar page object class
  **/
 
-class HomePage(driver: WebDriver?) {
+class MenuBarPage(driver: WebDriver?) : BasePage(){
 
     @FindBy(xpath = "//a[@class='login']")
     private val signInButton: WebElement? = null
+
+    @FindBy(css = ".logout")
+    private val signOutButton: WebElement? = null
 
     init {
         PageFactory.initElements(driver, this)
@@ -25,6 +28,10 @@ class HomePage(driver: WebDriver?) {
 
     fun clickOnSignInButton() {
         signInButton?.click()
+    }
+
+    fun clickOnSignOutButton() {
+        signOutButton?.click()
     }
 
 

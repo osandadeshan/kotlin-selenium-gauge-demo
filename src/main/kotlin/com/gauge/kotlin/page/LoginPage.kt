@@ -11,10 +11,10 @@ import org.openqa.selenium.support.PageFactory
  * Version         : 1.0.0
  * Date            : 4/12/2020
  * Time            : 5:03 PM
- * Description     : This is loginpage page object class
+ * Description     : This is login page object class
  **/
 
-class LoginPage(driver: WebDriver?) {
+class LoginPage(driver: WebDriver?) : BasePage() {
 
     @FindBy(id = "email")
     private val emailTextBox: WebElement? = null
@@ -25,6 +25,12 @@ class LoginPage(driver: WebDriver?) {
     @FindBy(xpath = "//p[@class='submit']//span[1]")
     private val signInButton: WebElement? = null
 
+    @FindBy(id = "email_create")
+    private val registrationEmailTextBox: WebElement? = null
+
+    @FindBy(id = "SubmitCreate")
+    private val registrationButton: WebElement? = null
+
     init {
         PageFactory.initElements(driver, this)
     }
@@ -33,6 +39,14 @@ class LoginPage(driver: WebDriver?) {
         emailTextBox?.sendKeys(email)
         passwordTextBox?.sendKeys(password)
         signInButton?.click()
+    }
+
+    fun inputNewEmail(email: String){
+        registrationEmailTextBox?.sendKeys(email)
+    }
+
+    fun clickOnCreateAccountButton(){
+        registrationButton?.click()
     }
 
 

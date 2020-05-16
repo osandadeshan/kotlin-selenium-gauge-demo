@@ -1,4 +1,4 @@
-package com.gauge.kotlin.util
+package com.gauge.kotlin.util.driver
 
 import io.github.bonigarcia.wdm.WebDriverManager
 import org.openqa.selenium.WebDriver

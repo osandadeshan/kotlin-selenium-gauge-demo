@@ -9,8 +9,28 @@ Description     : This is a concept file
 
 
 
+# On login page
+* On landing page
+* Click on Sign In button
+
+
 # Login with email <email> and password <password>
 
-* On home page
-* Click on Sign In button
+* On login page
 * Login to the application using email <email> and password <password>
+* Page title is "My account - My Store"
+
+
+# Register a new user <Title> <First Name> <Last Name> <Password> <Company> <Address Line1> <Address Line2> <City> <State> <Postal Code> <Country> <Mobile Number>
+* On login page
+* Enter a new email to register
+* Click on Create an Account button
+* Input personal information <Title> <First Name> <Last Name> <Password>
+* Input address information <Company> <Address Line1> <Address Line2> <City> <State> <Postal Code> <Country> <Mobile Number>
+* Click on Register button
+* Page title is "My account - My Store"
+
+
+# Logout
+* Click on Sign Out button
+* Page title is "Login - My Store"
