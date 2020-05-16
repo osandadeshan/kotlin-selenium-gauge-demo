@@ -1,4 +1,4 @@
-package com.gauge.kotlin.util.datastore
+package com.gauge.kotlin.util
 
 import com.thoughtworks.gauge.datastore.DataStoreFactory
 
@@ -51,17 +51,32 @@ object DataStore {
 
     fun saveToDataStore(dataStoreType: DataStoreType, variableName: String, valueToBeStored: String) {
         when (dataStoreType) {
-            DataStoreType.SPEC -> saveToSpecificationDataStore(variableName, valueToBeStored)
-            DataStoreType.SCENARIO -> saveToScenarioDataStore(variableName, valueToBeStored)
-            DataStoreType.SUITE -> saveToSuiteDataStore(variableName, valueToBeStored)
+            DataStoreType.SPEC -> saveToSpecificationDataStore(
+                variableName,
+                valueToBeStored
+            )
+            DataStoreType.SCENARIO -> saveToScenarioDataStore(
+                variableName,
+                valueToBeStored
+            )
+            DataStoreType.SUITE -> saveToSuiteDataStore(
+                variableName,
+                valueToBeStored
+            )
         }
     }
 
     fun readFromDataStore(dataStoreType: DataStoreType, variableName: String): String {
        return when (dataStoreType) {
-            DataStoreType.SPEC -> getSpecificationDataStoreValue(variableName)
-            DataStoreType.SCENARIO -> getScenarioDataStoreValue(variableName)
-            DataStoreType.SUITE -> getSuiteDataStoreValue(variableName)
+            DataStoreType.SPEC -> getSpecificationDataStoreValue(
+                variableName
+            )
+            DataStoreType.SCENARIO -> getScenarioDataStoreValue(
+                variableName
+            )
+            DataStoreType.SUITE -> getSuiteDataStoreValue(
+                variableName
+            )
         }
     }
 

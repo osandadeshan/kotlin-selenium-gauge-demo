@@ -3,8 +3,8 @@ package com.gauge.kotlin.steps
 import com.gauge.kotlin.page.LoginPage
 import com.gauge.kotlin.page.RegistrationPage
 import com.gauge.kotlin.util.EpochTime
-import com.gauge.kotlin.util.datastore.DataStore
-import com.gauge.kotlin.util.datastore.DataStore.DataStoreType.SCENARIO
+import com.gauge.kotlin.util.DataStore
+import com.gauge.kotlin.util.DataStore.DataStoreType.SCENARIO
 import com.thoughtworks.gauge.Step
 
 /**

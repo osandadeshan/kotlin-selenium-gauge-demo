@@ -1,8 +1,8 @@
 package com.gauge.kotlin.steps
 
 import com.gauge.kotlin.page.LoginPage
-import com.gauge.kotlin.util.datastore.DataStore.DataStoreType
-import com.gauge.kotlin.util.datastore.DataStore.readFromDataStore
+import com.gauge.kotlin.util.DataStore.DataStoreType
+import com.gauge.kotlin.util.DataStore.readFromDataStore
 import com.thoughtworks.gauge.Step
 
 /**
