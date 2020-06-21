@@ -24,8 +24,7 @@ class Driver {
     // Since this does not have a significance in the application's business domain, the BeforeSuite hook is used to instantiate the webDriver
     @BeforeScenario
     fun initializeDriver() {
-        webDriver =
-            DriverFactory.driver
+        webDriver = DriverFactory.driver
         webDriver?.manage()?.window()?.maximize()
     }
 
