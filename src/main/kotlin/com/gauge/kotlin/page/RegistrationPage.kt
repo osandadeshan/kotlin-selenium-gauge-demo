@@ -101,7 +101,6 @@ class RegistrationPage(driver: WebDriver?) : BasePage() {
     }
 
     // Address Information Page Object Methods
-
     private fun inputCompany(company: String){
         waitUntilElementIsVisible(companyTextBox, 30)
         companyTextBox?.sendKeys(company)
